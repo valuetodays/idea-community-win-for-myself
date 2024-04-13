@@ -1,0 +1,28 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="AutoImportSettings">
+        <option name="autoReloadType" value="SELECTIVE" />
+      </component>
+      <component name="MavenImportPreferences">
+        <option name="generalSettings">
+          <MavenGeneralSettings>
+            <option name="customMavenHome" value="D:/ws/apps/apache-maven-3.6.3" />
+            <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+          </MavenGeneralSettings>
+        </option>
+      </component>
+      <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+      <component name="WindowStateProjectService">
+        <state x="142" y="33" key="SettingsEditor" timestamp="1712069996309">
+          <screen x="0" y="40" width="1280" height="760" />
+        </state>
+        <state x="142" y="33" key="SettingsEditor/0.40.1280.760" timestamp="1712069996309" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

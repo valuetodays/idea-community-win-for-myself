@@ -1,0 +1,21 @@
+<application>
+  <component name="aeInstalledPlugins">
+    <option name="myPlugins">
+      <map>
+        <entry key="String Manipulation" value="1712402172319" />
+        <entry key="awesome.console" value="1712402299635" />
+        <entry key="com.aegamesi.java_visualizer.plugin" value="1712402316067" />
+        <entry key="com.github.beansoftapp.visualgc.plugin" value="1712402308933" />
+        <entry key="com.github.copilot" value="1712402689803" />
+        <entry key="com.github.wangji92.arthas.plugin" value="1712402345504" />
+        <entry key="com.nasller.CodeGlancePro" value="1712402355970" />
+        <entry key="com.tabnine.TabNine" value="1712402303055" />
+        <entry key="de.endrullis.idea.postfixtemplates" value="1712402203563" />
+        <entry key="gudqs7.github.io.getter-setter-postfix" value="1712402195395" />
+        <entry key="izhangzhihao.rainbow.brackets" value="1712402154351" />
+        <entry key="mobi.hsz.idea.gitignore" value="1712402333740" />
+        <entry key="net.orekyuu.java8postfix" value="1712402179451" />
+      </map>
+    </option>
+  </component>
+</application>

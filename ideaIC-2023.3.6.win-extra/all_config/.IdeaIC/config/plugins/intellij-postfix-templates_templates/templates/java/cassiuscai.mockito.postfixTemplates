@@ -1,0 +1,56 @@
+# Mockito postfix templates
+# create mock instance
+.mock : mockito mock
+    java.lang.Class     [org.mockito.Mockito]       →  org.mockito.Mockito.mock($expr$)  [USE_STATIC_IMPORTS]
+.mockWithName : mockito mockWithName
+    java.lang.Class     [org.mockito.Mockito]       →  org.mockito.Mockito.mock($expr$, $name$)  [USE_STATIC_IMPORTS]
+.mockWithAnswer : mockito mockWithAnswer
+    java.lang.Class     [org.mockito.Mockito]       →  org.mockito.Mockito.mock($expr$, (org.mockito.stubbing.Answer<$answerType$>) invocation -> $answerBody$)   [USE_STATIC_IMPORTS]
+
+# create spy instance
+.spy : mockito spy
+    java.lang.Object    [org.mockito.Mockito]       →  org.mockito.Mockito.spy($expr$)   [USE_STATIC_IMPORTS]
+
+# mockito stubing operations
+.when : mockito when
+    NON_VOID            [org.mockito.Mockito]       →  org.mockito.Mockito.when($expr$)  [USE_STATIC_IMPORTS]
+.verify : mockito verify
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.verify($expr$)    [USE_STATIC_IMPORTS]
+.verifyWithMode : mockito verifyWithMode
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.verify($expr$,$mode$) [USE_STATIC_IMPORTS]
+.reset : mockito reset
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.reset($expr$); [USE_STATIC_IMPORTS]
+.argThat : mockito argThat
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.argThat($expr$ -> $END$)  [USE_STATIC_IMPORTS]
+.clearInvocations : mockito clearInvocations
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.clearInvocations($expr$);  [USE_STATIC_IMPORTS]
+.doThrow : mockito doThrow
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.doThrow($throwable$).when($expr$).$END$   [USE_STATIC_IMPORTS]
+.doNothing : mockito doNothing
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.doNothing().when($expr$).$END$    [USE_STATIC_IMPORTS]
+.doAnswer : mockito doAnswer
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.doAnswer((org.mockito.stubbing.Answer<$answerType$>) invocation -> $answerBody$).when($expr$).$END$    [USE_STATIC_IMPORTS]
+.doReturn : mockito doReturn
+    ANY                 [org.mockito.Mockito]       →  org.mockito.Mockito.doReturn($returnValue$).when($expr$).$END$    [USE_STATIC_IMPORTS]
+.initMockito : mockito initMockito
+    ANY                 [org.mockito.Mockito]       →  org.mockito.MockitoAnnotations.initMocks($expr$);
+.openMockito : mockito openMockito
+    ANY                 [org.mockito.Mockito]       →  org.mockito.MockitoAnnotations.openMocks($expr$);
+
+# BDDMockito postfix templates from https://github.com/krrrr38/intellij-mockito-postfix-plugin
+.given : BDDMockito given
+    java.lang.Class     [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.given($expr$)$END$  [USE_STATIC_IMPORTS]
+.then : BDDMockito then
+    java.lang.Class     [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.then($expr$)$END$  [USE_STATIC_IMPORTS]
+.will : BDDMockito will
+    NON_VOID            [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.will($answer$).given($expr$)$END$   [USE_STATIC_IMPORTS]
+.willAnswer : BDDMockito willAnswer
+    NON_VOID            [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.willAnswer($answer$).given($expr$).$END$   [USE_STATIC_IMPORTS]
+.willDoNothing : BDDMockito willDoNothing
+    NON_VOID            [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.willDoNothing().given($expr$)$END$   [USE_STATIC_IMPORTS]
+.willReturn : BDDMockito willReturn
+    NON_VOID            [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.willReturn($return$).given($expr$)$END$   [USE_STATIC_IMPORTS]
+.willThrow : BDDMockito willThrow
+    NON_VOID            [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.willThrow($ex$).given($expr$)$END$   [USE_STATIC_IMPORTS]
+.willCallRealMethod : BDDMockito willCallRealMethod
+    NON_VOID            [org.mockito.BDDMockito]    →  org.mockito.BDDMockito.willCallRealMethod().given($expr$)$END$   [USE_STATIC_IMPORTS]

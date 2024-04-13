@@ -1,0 +1,6 @@
+<keymap version="1" name="Windows copy" parent="$default">
+  <action id="CopyStoryContent" />
+  <action id="DebugClass">
+    <keyboard-shortcut first-keystroke="f10" />
+  </action>
+</keymap>

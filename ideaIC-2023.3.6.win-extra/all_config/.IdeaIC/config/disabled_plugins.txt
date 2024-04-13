@@ -1,0 +1,17 @@
+PerforceDirectPlugin
+Subversion
+com.intellij.gradle
+com.intellij.plugins.eclipsekeymap
+com.intellij.plugins.netbeanskeymap
+com.intellij.plugins.visualstudiokeymap
+com.intellij.settingsSync
+com.intellij.uiDesigner
+com.jetbrains.codeWithMe
+com.jetbrains.space
+hg4idea
+org.intellij.groovy
+org.jetbrains.idea.eclipse
+org.jetbrains.plugins.github
+org.jetbrains.plugins.gitlab
+org.toml.lang
+training

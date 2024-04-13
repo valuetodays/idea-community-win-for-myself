@@ -1,0 +1,52 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Undo">
+      <i c="1" l="1712401816216" />
+    </e>
+    <e n="EditorLineStartWithSelection">
+      <i c="1" l="1712402092390" />
+    </e>
+    <e n="EditorPaste">
+      <i c="17" l="1712402341455" />
+    </e>
+    <e n="Exit">
+      <i c="1" l="1712401787792" />
+    </e>
+    <e n="ImportSettings">
+      <i c="1" l="1712401468241" />
+    </e>
+    <e n="InvalidateCaches">
+      <i c="1" l="1712403044878" />
+    </e>
+    <e n="ShowSettings">
+      <i c="3" l="1712403331330" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1712401451121" />
+    </e>
+    <e n="com.intellij.execution.lineMarker.LineMarkerActionWrapper">
+      <i c="1" l="1712403343520" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
+      <i c="1" l="1712401417294" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="3" l="1712403041806" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="3" l="1712403340158" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="6" l="1712403329727" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
+      <i c="1" l="1712401420193" />
+    </e>
+    <e n="com.intellij.toolWindow.ShowMoreToolWindowsAction">
+      <i c="1" l="1712403340534" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1712403313171" />
+    </e>
+  </component>
+</application>

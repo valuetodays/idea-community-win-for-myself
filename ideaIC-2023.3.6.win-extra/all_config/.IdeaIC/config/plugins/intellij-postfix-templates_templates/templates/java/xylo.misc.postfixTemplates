@@ -1,0 +1,55 @@
+## misc ##
+
+.new : new instance
+	CLASS                    →  new $expr$($END$)
+
+
+.val : final T name = expr
+	NON_VOID                →   final $type*:expressionType(expr))$ $var:suggestVariableName()$ = $expr$;
+
+.vall : lombok.val name = expr
+	NON_VOID [lombok.val]   →   lombok.val $var:suggestVariableName()$ = $expr$;
+
+.varl : lombok.var name = expr
+	NON_VOID [lombok.var]    →  lombok.var $var:suggestVariableName()$ = $expr$;
+
+.orElse : or else
+	NON_VOID  →  Optional.ofNullable($expr$).orElse($value$)
+
+.orElseGet : or else get
+	NON_VOID  →  Optional.ofNullable($expr$).orElseGet(() -> $supplier$)
+
+.elvis : a ? a : b
+	NON_VOID  →  $expr$ != null ? $expr$ : $END$
+
+
+## String templates ##
+
+.r : compile pattern
+	java.lang.String         →  java.util.regex.Pattern.compile($expr$)
+
+.regEx : compile pattern
+	java.lang.String         →  java.util.regex.Pattern.compile($expr$)
+
+.capitalize : capitalize first character
+	java.lang.String         →  $expr$.substring(0, 1).toUpperCase() + $expr$.substring(1)
+
+.uncapitalize : uncapitalize first character
+	java.lang.String         →  $expr$.substring(0, 1).toLowerCase() + $expr$.substring(1)
+
+
+## Date templates ##
+
+.toDate : to Date
+	java.time.LocalDate       →   java.util.Date.from($expr$.atStartOfDay().atZone($zone::"ZoneId.systemDefault()"$).toInstant())
+	java.time.LocalTime       →   java.util.Date.from($expr$.atDate($date$).atZone($zone::"ZoneId.systemDefault()"$).toInstant())
+	java.time.LocalDateTime   →   java.util.Date.from($expr$.atZone($zone::"ZoneId.systemDefault()"$).toInstant())
+
+.toLocalDate : to LocalDate
+	java.util.Date            →   $expr$.toInstant().atZone($zone::"ZoneId.systemDefault()"$).toLocalDate()
+
+.toLocalTime : to LocalTime
+	java.util.Date            →   $expr$.toInstant().atZone($zone::"ZoneId.systemDefault()"$).toLocalTime()
+
+.toLocalDateTime : to LocalDateTime
+	java.util.Date            →   $expr$.toInstant().atZone($zone::"ZoneId.systemDefault()"$).toLocalDateTime()
