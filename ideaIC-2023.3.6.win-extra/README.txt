@@ -16,6 +16,7 @@
 
 ## 定制版做了什么修改
 
+- [x] 退出idea时不需要确认
 - [x] 不升级idea
 - [x] 配置F10运行测试类/测试方法。
 - [x] 调整了 bin/idea.properties，将配置文件移到相对目录all_config
