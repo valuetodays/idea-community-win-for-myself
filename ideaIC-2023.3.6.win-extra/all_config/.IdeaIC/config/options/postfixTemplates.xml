@@ -1,0 +1,14 @@
+<application>
+  <component name="PostfixTemplates">
+    <template id="loginfo@userDefined" key=".loginfo" provider="builtin.java" language-level="8" topmost="true">
+      <conditions />
+      <template name="fakeKey" value="log.info(&quot;$EXPR$={}$END$&quot;, $EXPR$);" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="nnn@userDefined" key=".nnn" provider="builtin.java" language-level="8" topmost="true">
+      <conditions>
+        <condition id="non void" />
+      </conditions>
+      <template name="fakeKey" value="if (Objects.nonNull($EXPR$)) {    &#10;    $END$&#10;}" toReformat="true" toShortenFQNames="true" />
+    </template>
+  </component>
+</application>
