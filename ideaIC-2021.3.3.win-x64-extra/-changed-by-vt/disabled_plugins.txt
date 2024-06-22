@@ -1,0 +1,11 @@
+DevKit
+PerforceDirectPlugin
+Subversion
+com.android.tools.idea.smali
+com.intellij.uiDesigner
+com.jetbrains.space
+hg4idea
+org.jetbrains.android
+org.jetbrains.idea.eclipse
+org.jetbrains.plugins.github
+org.jetbrains.plugins.javaFX

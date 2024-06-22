@@ -1,0 +1,4 @@
+idea64.exe installPlugins GrepConsole
+
+idea64.exe installPlugins GrepConsole MavenRunHelper "String Manipulation" com.aegamesi.java_visualizer.plugin com.codota.csp.intellij com.github.beansoftapp.visualgc.plugin de.endrullis.idea.postfixtemplates gudqs7.github.io.getter-setter-postfix indent-rainbow.indent-rainbow izhangzhihao.rainbow.brackets net.orekyuu.java8postfix
+

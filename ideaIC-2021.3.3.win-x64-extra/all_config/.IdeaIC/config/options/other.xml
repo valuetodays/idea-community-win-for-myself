@@ -1,0 +1,15 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="CWM_LOGGING_VERSION" value="1" />
+    <property name="NextRunPlatformUpdateBuild" value="IC-232.10072.27/2023.2.3" />
+    <property name="NextRunPlatformUpdateVersion" value="2023.2.3" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="bundled.plugins.list.saved.version" value="IC-213.7172.25" />
+    <property name="eclipse.projects.detected" value="" />
+    <property name="file.chooser.recent.files" value="Y:/System Volume Information/Registry Workshop/settings.zip" />
+    <property name="fileTypeChangedCounter" value="2" />
+    <property name="fileTypeDetectors" value="com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
+    <property name="last_opened_file_path" value="Y:/System Volume Information/Registry Workshop/settings.zip" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+</application>
