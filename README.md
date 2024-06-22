@@ -3,3 +3,4 @@
 ## 版本
 
 - [x] ideaIC-2023.3.6.win
+- [x] ideaIC-2021.3.3.win
